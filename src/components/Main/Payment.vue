@@ -1,7 +1,7 @@
 <template>
 	<div class="PAYMENT">
 		<div class="dividing-line"></div>
-		<div class="checks">Проверок осталось <div class="checks-left">20000</div></div>
+		<div class="checks"><h3>Проверок осталось </h3><div class="checks-left"><h3>20000</h3></div></div>
 		<div class="radio-container">
 			<span :class="!data.radio ? `checked` : ``" class="r1">
 				<input type="radio" id="r1" name="rr" @change="radioChange(false)" :checked="!data.radio" />
@@ -32,9 +32,7 @@
 				</span>
 			</span>
 		</div>
-		<div v-if="data.radio">
-			123
-		</div>
+		<div v-if="data.radio" class="calculate"></div>
 	</div>
 </template>
 
@@ -110,7 +108,7 @@
 		cursor: pointer;
 	}
 	.checked *{
-		color: red;
+		color: #7bceff;
 		cursor: default;
 		font-size: 25px;
 	}
@@ -138,5 +136,7 @@ input[type="radio"] {
 label:after{
 	display: none;
 }
-
+.calculate{
+	min-height: 81px;
+}
 </style>

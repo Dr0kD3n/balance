@@ -92,6 +92,19 @@ svg{
     background: white;
     color:#555;
   }
+  @media all and (max-width: 395px){
+    .nav-tabs .nav-item{
+      width: 100%;
+      text-align: center;
+    }
+    .nav-link.active, .nav-tabs .nav-link.active{
+      border-left: 0;
+      width: 100%;
+      border-right: 0;
+      border-color:#dee2e6 #dee2e6 #dee2e6
+    }
+  }
+
   .nav-tabs .nav-link:hover{
     color:#555;
   }

@@ -37,7 +37,8 @@
 <style scoped lang="scss">
 
 .Balance, .Payments, .History, .Stats{
-	padding-top:10px;
+	padding-top:10px;    
+	color: #555;
 	.nav-link{
 		color: #a7b1c2;
 	}

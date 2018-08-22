@@ -103,7 +103,8 @@ $slideHeight: 254px;
 .CURRENT-PLAN{
 	border-top: .5px solid #dee2e6; 
 	border: 1px solid #dee2e6; 
-	background: white;
+	margin-bottom: 10px;
+	background: #eee;
 	.current-plan-tab{
 		padding-left: 25px;
 		padding-right: 25px;
@@ -167,6 +168,8 @@ $slideHeight: 254px;
 	}
 	.upper{
 		border-bottom: 1px solid #dee2e6;
+		color: #555;
+		background: white;
 		svg{
 			position: absolute;
 			right: 11px;
@@ -178,12 +181,25 @@ $slideHeight: 254px;
 	}
 	.lower{
 		height: 31px;
+		color: #555;
+		background: white;
 		.btn{
 			float: right;	
+			color: white;
 		}
 		.limit{
 			margin-top: 4px;
 			position: absolute;
+		}
+	}
+	@media all and (max-width: 480px){
+		.lower{
+			.btn{
+				width: 100%;
+			}
+			.limit{
+				display: none;
+			}
 		}
 	}
 	.current-plan-span{

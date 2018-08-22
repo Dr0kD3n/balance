@@ -25,7 +25,8 @@
 
 <style scoped lang="scss">
 .FOOTER{
-	margin-top:auto; 
+	//margin-top:auto; 
+	margin-top: 10px;
 	bottom: 0;
 	width: 100%;
 	.Footer-wrapper {
@@ -48,6 +49,7 @@
 		@media all and (max-width: 820px){
 			.Gentime{
 				opacity:0;
+				width: 0px;
 				margin-left:0;
 				margin-right:0;
 			}
