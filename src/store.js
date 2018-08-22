@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
   state: {
-    showSidebar: true,
+    showSidebar: false,
     sidebarDropdown: "",
     currentPlanShow: false,
     radio: false,

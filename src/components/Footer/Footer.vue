@@ -25,18 +25,13 @@
 
 <style scoped lang="scss">
 .FOOTER{
-	margin-top: calc( 43vh - 8px );
-	position: relative;
+	margin-top:auto; 
+	bottom: 0;
+	width: 100%;
 	.Footer-wrapper {
-		width:100%;
-		z-index:-1;
-		position: absolute;
-		margin-top: 10px;
-		bottom: 0;
 		*{
 			color:white;
 			display: inline-block;
-			
 		}
 		*:hover,*:focus{
 			color:white;
@@ -44,6 +39,7 @@
 		}
 		.Copyright{
 			right: 10px;
+			position: static;
 			position: absolute;
 		}
 		.Gentime{
@@ -58,12 +54,14 @@
 			.Copyright{
 				margin:auto;
 				right: calc( 50% - 185px );
+				position: static;
 			}
 		}
 		@media all and (max-width: 410px){
 			.Copyright{
 				margin:auto;
 				right: calc( 50% - 67px );
+				position: static;
 			}
 		}
 	}
