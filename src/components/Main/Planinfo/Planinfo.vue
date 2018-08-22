@@ -1,16 +1,16 @@
 <template>
 	<div>
 		<b-tabs variant="primary">
-			<b-tab title="Balance" class="Balance" active>
+			<b-tab title="Баланс" class="Balance" active>
 				<Balance />
 			</b-tab>
-			<b-tab title="History" class="History" >
+			<b-tab title="История" class="History" >
 				<History />
 			</b-tab>
-			<b-tab title="Payments" class="Payments">
+			<b-tab title="Платежи" class="Payments">
 				<Payments />
 			</b-tab>
-			<b-tab title="Statistics" class="Stats">
+			<b-tab title="Статистика" class="Stats">
 				<Stats />
 			</b-tab>	
 		</b-tabs>

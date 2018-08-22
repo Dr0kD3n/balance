@@ -1,20 +1,20 @@
 <template>	
 	<div class="CURRENT-PLAN">
 		<div class="upper">
-			<span class="current-plan-span">Current Plan: Ultimate</span>
+			<span class="current-plan-span">Текущий план: Полный</span>
 			<span class="collapse-btn btn" @click="currentPlan"><icon name="caret" /></span>
 		</div>
 		<transition name="currentPlanShowAnimation">
 			<div v-show="data.currentPlanShow" class="animation-wrapper middle">
 				<b-tabs variant="primary">
-					<b-tab :title="`Project ${index}`" class="current-plan-tab" v-for="(plan, index) in data.plans" :key="index">
+					<b-tab :title="`Проект ${index}`" class="current-plan-tab" v-for="(plan, index) in data.plans" :key="index">
 						<div class="col-lg-2">
 							<div class="ibox">
 								<div class="progress progress-mini" :class="plan.domains <= 0 ? 'red' : ''">
 									<div class="progress-bar"></div>
 								</div>
 								<div class="ibox-content text-center">
-									<h4>Domains</h4><br>
+									<h4>Дрмены</h4><br>
 									<h2 class="currentPackageValues">
 										<i class="fa fa-rub" aria-hidden="true"></i>{{plan.domains}}
 										<br>
@@ -29,7 +29,7 @@
 									<div class="progress-bar"></div>
 								</div>
 								<div class="ibox-content text-center">
-									<h4>Search Systems</h4><br>
+									<h4>Поисковые Системы</h4><br>
 									<h2 class="currentPackageValues">
 										<i class="fa fa-rub" aria-hidden="true"></i>{{plan.searchSystems}}
 										<br>
@@ -44,7 +44,7 @@
 									<div class="progress-bar"></div>
 								</div>
 								<div class="ibox-content text-center">
-									<h4>Key Frases</h4><br>
+									<h4>Ключевые Фразы</h4><br>
 									<h2 class="currentPackageValues">
 										<i class="fa fa-rub" aria-hidden="true"></i>{{plan.keyFrases}}
 										<br>
@@ -59,7 +59,7 @@
 									<div class="progress-bar"></div>
 								</div>
 								<div class="ibox-content text-center">
-									<h4>Checks Per Day</h4><br>
+									<h4>Проверок В День</h4><br>
 									<h2 class="currentPackageValues">
 										<i class="fa fa-rub" aria-hidden="true"></i>{{plan.checksPerDay}}
 										<br>
@@ -74,7 +74,7 @@
 		</transition>
 		<div class="lower">
 			<span class="limit">Месячный лимит заканчивается:	16.09.2018 </span>
-			<a class="btn btn-sm btn-outline btn-primary" href="/ru/panel/package/index">Улучшить пакет</a>
+			<a class="btn btn-sm btn-outline btn-primary" href="#">Улучшить пакет</a>
 		</div>
 	</div>
 </template>
@@ -183,6 +183,8 @@ $slideHeight: 254px;
 		height: 31px;
 		color: #555;
 		background: white;
+		padding-right: 10px;
+		padding-left: 10px;
 		.btn{
 			float: right;	
 			color: white;
@@ -192,8 +194,10 @@ $slideHeight: 254px;
 			position: absolute;
 		}
 	}
-	@media all and (max-width: 480px){
+	@media all and (max-width: 500px){
 		.lower{
+			padding-right: 0px;
+			padding-left: 0px;
 			.btn{
 				width: 100%;
 			}

@@ -24,7 +24,7 @@
 				<div class="ibox-content text-center">
 					<h4>Доступно</h4><br>
 					<h2 class="currentPackageValues">
-						<i class="fa fa-rub" aria-hidden="true"></i>0.025
+						<i class="fa fa-rub" aria-hidden="true"></i>0
 						<span id="check-price" data-price="0.025" hidden=""></span>
 						<br>
 						&nbsp;
@@ -40,7 +40,7 @@
 				<div class="ibox-content text-center">
 					<h4>Количество проверок в день</h4><br>
 					<h2 class="currentPackageValues">
-						<i class="fa fa-rub" aria-hidden="true"></i>0.025
+						<i class="fa fa-rub" aria-hidden="true"></i>0
 						<span id="check-price" data-price="0.025" hidden=""></span>
 						<br>
 						&nbsp;
@@ -56,7 +56,7 @@
 				<div class="ibox-content text-center">
 					<h4>Стоимость проверок в день</h4><br>
 					<h2 class="currentPackageValues">
-						<i class="fa fa-rub" aria-hidden="true"></i>0.025
+						<i class="fa fa-rub" aria-hidden="true"></i>0
 						<span id="check-price" data-price="0.025" hidden=""></span>
 						<br>
 						&nbsp;
@@ -72,7 +72,7 @@
 				<div class="ibox-content text-center">
 					<h4>Осталось проверок</h4><br>
 					<h2 class="currentPackageValues">
-						<i class="fa fa-rub" aria-hidden="true"></i>0.025
+						<i class="fa fa-rub" aria-hidden="true"></i>20000
 						<span id="check-price" data-price="0.025" hidden=""></span>
 						<br>
 						&nbsp;

@@ -6,42 +6,42 @@
 					<div>
 						<b-nav-item>
 							<div class="userInfo">
-								<img src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Ffree-social-media-icons%2F512%2FUser.png&f=1">
+								<img src="../assets/img/user.png">
 								<div class="email">some@email.com</div>
-								<div class="current-plan">Current Plan: Ultimate</div>
+								<div class="current-plan">План: Полный</div>
 							</div>
 						</b-nav-item>
 						<div class="sidebar-item-colection">
-							<b-nav-item class="sidebar-item" id="Profile">Profile</b-nav-item>
-							<b-nav-item class="sidebar-item sidebar-dropdown" id="Projects" @click="sidebarDropdown('Projects')" :class="data.sidebarDropdown == 'Projects' ? 'sidebar-item-opened' : ''">Projects<icon name="caret" />
+							<b-nav-item class="sidebar-item" id="Profile">Профиль</b-nav-item>
+							<b-nav-item class="sidebar-item sidebar-dropdown" id="Projects" @click="sidebarDropdown('Projects')" :class="data.sidebarDropdown == 'Projects' ? 'sidebar-item-opened' : ''">Проекты<icon name="caret" />
 								<transition name="tansition-sidebar-dropdown-collection">
 									<b-nav vertical class="sidebar-dropdown-collection" v-show="data.sidebarDropdown == 'Projects'">
-										<b-nav-item>first</b-nav-item>
-										<b-nav-item>second</b-nav-item>
-										<b-nav-item>third</b-nav-item>
+										<b-nav-item>Первый</b-nav-item>
+										<b-nav-item>Второй</b-nav-item>
+										<b-nav-item>Третий</b-nav-item>
 									</b-nav>
 								</transition>
 							</b-nav-item>
-							<b-nav-item class="sidebar-item sidebar-dropdown" id="Mutual-projects" @click="sidebarDropdown('Mutual-projects')" :class="data.sidebarDropdown == 'Mutual-projects' ? 'sidebar-item-opened' : ''">Mutual Projects<icon name="caret" />
+							<b-nav-item class="sidebar-item sidebar-dropdown" id="Mutual-projects" @click="sidebarDropdown('Mutual-projects')" :class="data.sidebarDropdown == 'Mutual-projects' ? 'sidebar-item-opened' : ''">Общие Проекты<icon name="caret" />
 								<transition name="tansition-sidebar-dropdown-collection-small">
 									<b-nav vertical class="sidebar-dropdown-collection" v-show="data.sidebarDropdown == 'Mutual-projects'">
-										<b-nav-item>first</b-nav-item>
-										<b-nav-item>second</b-nav-item>
+										<b-nav-item>Первый</b-nav-item>
+										<b-nav-item>Второй</b-nav-item>
 									</b-nav>
 								</transition>
 							</b-nav-item>
-							<b-nav-item class="sidebar-item" id="Telegram-chat">Telegram chat</b-nav-item>
-							<b-nav-item class="sidebar-item sidebar-dropdown" id="Payments"  @click="sidebarDropdown('Payments')" :class="data.sidebarDropdown == 'Payments' ? 'sidebar-item-opened' : ''">Payments<icon name="caret" />
+							<b-nav-item class="sidebar-item" id="Telegram-chat">Телеграм Чат</b-nav-item>
+							<b-nav-item class="sidebar-item sidebar-dropdown" id="Payments"  @click="sidebarDropdown('Payments')" :class="data.sidebarDropdown == 'Payments' ? 'sidebar-item-opened' : ''">Платежи<icon name="caret" />
 								<transition name="tansition-sidebar-dropdown-collection">
 									<b-nav vertical class="sidebar-dropdown-collection" v-show="data.sidebarDropdown == 'Payments'" key="ul">
-										<b-nav-item>first</b-nav-item>
-										<b-nav-item>second</b-nav-item>
-										<b-nav-item>third</b-nav-item>
+										<b-nav-item>Первый</b-nav-item>
+										<b-nav-item>Второй</b-nav-item>
+										<b-nav-item>Третий</b-nav-item>
 									</b-nav>
 								</transition>
 							</b-nav-item>
-							<b-nav-item class="sidebar-item" id="Referal-programm">Referal Programm</b-nav-item>
-							<b-nav-item class="sidebar-item" id="Limits">Limits</b-nav-item>
+							<b-nav-item class="sidebar-item" id="Referal-programm">Реферальная Программа</b-nav-item>
+							<b-nav-item class="sidebar-item" id="Limits">Лимиты</b-nav-item>
 						</div>
 					</div>
 				</div>

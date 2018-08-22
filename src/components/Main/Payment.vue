@@ -19,7 +19,7 @@
 				</span>
 				<form id="search-top-form" class="form-horizontal ng-pristine ng-valid">
 					<div class="input-group">
-						<input type="text" class="form-control" name="search" placeholder="Поиск" v-model="recommended">
+						<input type="text" class="form-control" v-model="recommended">
 						<span class="input-group-btn">
 							<button type="submit" class="btn btn-primary btn-sm">Оплатить</button>
 						</span>
