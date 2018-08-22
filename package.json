@@ -1,0 +1,33 @@
+{
+  "name": "balance",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@websanova/vue-fa": "^0.1.5",
+    "animate.css": "^3.7.0",
+    "animated-vue": "^0.5.3",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "register-service-worker": "^1.0.0",
+    "vue": "^2.5.17",
+    "vue-awesome": "^3.1.0",
+    "vue-config": "^1.0.0",
+    "vue-d2b": "^1.0.14",
+    "vue-fa": "^1.2.0",
+    "vue-strap": "^1.1.40",
+    "vue2-frappe": "^1.0.23",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-pwa": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
