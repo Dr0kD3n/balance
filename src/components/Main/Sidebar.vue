@@ -54,8 +54,8 @@
 		computed:{
 			data(){
 				return{
-					showSidebar: this.$store.state.showSidebar,
-					sidebarDropdown: this.$store.state.sidebarDropdown
+					showSidebar: this.$store.getters.showSidebar,
+					sidebarDropdown: this.$store.getters.sidebarDropdown
 				}
 			}
 		},

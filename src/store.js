@@ -39,7 +39,24 @@ export const store = new Vuex.Store({
       state.radio = data.payload;
     }
   },
-  actions: {
-
+  getters: {
+    showSidebar(state){
+      return state.showSidebar
+    },
+    sidebarDropdown(state){
+      return state.sidebarDropdown
+    },
+    currentPlanShow(state){
+      return state.currentPlanShow
+    },
+    radio(state){
+      return state.radio
+    },
+    plans(state){
+      return state.plans
+    },
+    history(state){
+      return state.history
+    }
   }
 })

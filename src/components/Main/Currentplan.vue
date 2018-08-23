@@ -85,7 +85,7 @@
 			data(){
 				return{
 					currentPlanShow: this.$store.state.currentPlanShow,
-					plans: this.$store.state.plans
+					plans: this.$store.getters.plans
 				}
 			}
 		},
