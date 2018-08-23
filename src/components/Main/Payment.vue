@@ -1,7 +1,6 @@
 <template>
 	<div class="PAYMENT">
 		<div class="dividing-line"></div>
-		<div class="checks"><h3>Проверок осталось </h3><div class="checks-left"><h3>20000</h3></div></div>
 		<div class="radio-container">
 			<span :class="!data.radio ? `checked` : ``" class="r1">
 				<input type="radio" id="r1" name="rr" @change="radioChange(false)" :checked="!data.radio" />
@@ -12,16 +11,16 @@
 				<label for="r2">Расчитать проверки</label>
 			</span>
 		</div>
-		<div v-if="!data.radio" class="amount-input">введите сумму для пополнения <br />
+		<div v-if="!data.radio" class="amount-input"><br />
 			<span class="input-wrapper">
 				<span class="amount-wrapper">
-					Сумма
+					Введите сумму для пополнения
 				</span>
 				<form id="search-top-form" class="form-horizontal ng-pristine ng-valid">
 					<div class="input-group">
 						<input type="text" class="form-control" v-model="recommended">
 						<span class="input-group-btn">
-							<button type="submit" class="btn btn-primary btn-sm">Оплатить</button>
+							<button type="submit" class="btn btn-primary btn-sm">Пополнить</button>
 						</span>
 					</div>
 				</form>
@@ -68,12 +67,13 @@
 			margin-top: 25px;
 			.recommended-wrapper{
 				min-height: 25px;
+				color: #7bceff;
 				min-width: 10px;
 				margin-left: -53px;
 				margin-bottom: 65px;
 			}
 			.amount-wrapper{
-				margin-left: -200px;
+				margin-left: -4px;
 			}
 			form{ 
 				display: inline-block;
@@ -88,14 +88,11 @@
 					margin-top: -2px;
 					z-index: 2;
 					margin-left: -1px;
-					border-top-left-radius: 0;
-					border-bottom-left-radius: 0;
 					position: relative;
-					border-radius: 3px;
 					padding: 5px 10px;
 					font-size: 12px;
 					line-height: 1.5;
-					border-radius: 3px;
+					border-radius: 0 4px 4px 0;
 					height: 36px;
 				}
 			}

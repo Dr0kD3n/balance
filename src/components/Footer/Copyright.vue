@@ -16,7 +16,7 @@
 <style scoped lang="scss">
 .COPYRIGHT{
 	*{
-		color:white;
+		color: #555;
 	}
 	@media all and (max-width: 820px){
 		.copyright{

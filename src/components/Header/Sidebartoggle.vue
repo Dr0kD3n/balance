@@ -1,6 +1,6 @@
 <template>
 	<div @click="toggleSidebar">
-		<button data-v-741978ef="" type="button" aria-label="Toggle navigation" class="btn"><icon name="sidebar"></icon></button>
+		<button data-v-741978ef="" type="button" aria-label="Toggle navigation" class="btn bg-primary"><icon name="sidebar"></icon></button>
 	</div>
 </template>
 
@@ -32,7 +32,9 @@
 }
 button{
 	border-color: rgba(0, 0, 0, 0.1);
-	
+	height: 38px;
+	width: 38px;
+	text-align: center;
 }
 
 </style>

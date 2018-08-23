@@ -25,7 +25,10 @@
 </script>
 
 <style lang="scss">
-
+.btn,.btn:hover,.btn:focus{
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
 html{
   overflow-x: hidden;
 }
@@ -44,15 +47,31 @@ body{
   color: #2c3e50;
   margin-top: 60px;
 }
-.navbar-light .navbar-toggler-icon {
-  background-image: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ferbsner.de%2Ffiles%2FContent%2FIcons%2Fburger_white-18.svg&f=1);
+.navbar-toggler:not(:disabled):not(.disabled) {
+  width: 38px;
+  height: 38px;
+}
+.navbar-light {
+  .navbar-toggler-icon {
+    background-image: url(components/assets/img/menu.svg);
+    background-size: 72% 100%;
+  }
 }
 svg{
   height: 28px;
   width: 28px;
 }
 .Header{
-  margin-bottom: 10px;
+  #ddown-split__BV_button_,#ddown-split__BV_button_:hover,#ddown-split__BV_button_:focus{
+    cursor: default;
+    color: #555;
+    background: transparent !important;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    margin-top: -2px;
+  }
+
+
 }
 .Main{
   top:0;
@@ -66,10 +85,6 @@ svg{
 }
 .navbar-light .navbar-nav .show > .nav-link{
   color:white;
-}
-#ddown-split__BV_button_:hover{
-  background-color: #007bff;
-  border-color: #007bff;
 }
 
 .Bell{
@@ -111,5 +126,8 @@ svg{
   a{
     color: #a7b1c2;
   }
+}
+.bg-primary,.btn-primary,.bg-primary:hover,.btn-primary:hover,.bg-primary,:focus.btn-primary:focus{
+  background: #7bceff !important;
 }
 </style>

@@ -17,6 +17,7 @@
 
 <style scoped lang="scss">
 .GENTIME{
+	color: #555;
 	@media all and (max-width: 820px){
 		.gentime{
 			display:none;

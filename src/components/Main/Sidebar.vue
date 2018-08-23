@@ -148,6 +148,8 @@ svg{
 .sidebar-wrapper{
 	position:fixed;
 	top:0;
+
+	font-size: 14px;
 }
 
 
@@ -232,7 +234,7 @@ svg{
 }
 @keyframes slideUp {
 	0% { 
-		height: 120px; 
+		height: 111px; 
 		border-left: $sidebar-opened-border-width solid $sidebar-opened-border-color;
 		background: #293846;
 	}
@@ -249,7 +251,7 @@ svg{
 		background: #293846;
 	}
 	100% { 
-		height: 120px;
+		height: 111px;
 		border-left: $sidebar-opened-border-width solid $sidebar-opened-border-color;
 		background: #293846;
 	}
@@ -276,7 +278,7 @@ svg{
 }
 @keyframes slideUpSmall {
 	0% { 
-		height: 80px; 
+		height: 74px; 
 		border-left: $sidebar-opened-border-width solid $sidebar-opened-border-color;
 		background: #293846;
 	}
@@ -293,7 +295,7 @@ svg{
 		background: #293846;
 	}
 	100% { 
-		height: 80px;
+		height: 74px;
 		border-left: $sidebar-opened-border-width solid $sidebar-opened-border-color;
 		background: #293846;
 	}

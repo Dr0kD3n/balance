@@ -20,23 +20,22 @@ form{
 	top: 11px;
 	width:250px;
 	z-index:0;
+	height: 37px;
 	input{
-		height: 36px; margin-top:-2px
+		margin-top: .5px;
+		height: 35.34px;
 	}
 	button{
 		font-size: 14px;
-		margin-top: -2px;
 		z-index: 2;
 		margin-left: -1px;
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
 		position: relative;
-		border-radius: 3px;
 		padding: 5px 10px;
 		font-size: 12px;
 		line-height: 1.5;
-		border-radius: 3px;
-		height: 36px;
+		height: 35.34px;
+		border-radius: 0 4px 4px 0;
+		margin-top: .5px;
 	}
 }
 

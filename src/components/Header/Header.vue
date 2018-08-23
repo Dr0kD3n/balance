@@ -1,9 +1,9 @@
 <template>
 	<nav class="navbar">
-		<b-navbar toggleable="md" variant="primary">
+		<b-navbar toggleable="md">
 			<div class="SidebarToggle"><SidebarToggle/></div>
-			<b-navbar-toggle target="nav_collapse nav-primary" v-show="!data.showSidebar"></b-navbar-toggle>
-			<b-collapse is-nav id="nav_collapse nav-primary">
+			<b-navbar-toggle target="nav_collapse nav-primary" v-show="!data.showSidebar" class="bg-primary"></b-navbar-toggle>
+			<b-collapse is-nav id="nav_collapse nav-primary bg-primary">
 				<b-navbar-nav class="ml-auto nav-primary">
 					<b-nav-form class="SearchBar"><SearchBar />
 					</b-nav-form>
@@ -68,6 +68,7 @@ nav{
 }
 .Language{
 	floar:right;
+	width: 73px;
 }
 .User{
 	floar:right;

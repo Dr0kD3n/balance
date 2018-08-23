@@ -7,14 +7,14 @@
 		<transition name="currentPlanShowAnimation">
 			<div v-show="data.currentPlanShow" class="animation-wrapper middle">
 				<b-tabs variant="primary">
-					<b-tab :title="`Проект ${index}`" class="current-plan-tab" v-for="(plan, index) in data.plans" :key="index">
+					<b-tab :title="`Проект ${index+1}`" class="current-plan-tab" v-for="(plan, index) in data.plans" :key="index">
 						<div class="col-lg-2">
 							<div class="ibox">
 								<div class="progress progress-mini" :class="plan.domains <= 0 ? 'red' : ''">
 									<div class="progress-bar"></div>
 								</div>
 								<div class="ibox-content text-center">
-									<h4>Дрмены</h4><br>
+									<h4>Домены</h4><br>
 									<h2 class="currentPackageValues">
 										<i class="fa fa-rub" aria-hidden="true"></i>{{plan.domains}}
 										<br>
@@ -173,7 +173,7 @@ $slideHeight: 254px;
 		svg{
 			position: absolute;
 			right: 11px;
-			top: 64px;
+			top: 52px;
 		}
 	}
 	.middle{
@@ -188,6 +188,8 @@ $slideHeight: 254px;
 		.btn{
 			float: right;	
 			color: white;
+			height: 31.5px;
+			padding-top: 6px;
 		}
 		.limit{
 			margin-top: 4px;
