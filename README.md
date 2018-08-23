@@ -1,4 +1,4 @@
-# balance
+# Balance
 
 ## Project setup
 ```
@@ -8,8 +8,6 @@ npm install
 ```
 mpn install --unsafe-pem
 ```
-## instead
-
 ### Compiles and hot-reloads for development
 ```
 npm run serve
