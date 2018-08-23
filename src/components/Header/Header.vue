@@ -61,17 +61,13 @@ nav{
 	width:38px;
 }
 .SearchBar{
-	floar:right;
 }
 .Downloads{
-	floar:right;
 }
 .Language{
-	floar:right;
 	width: 73px;
 }
 .User{
-	floar:right;
 	.btn-primary:hover{
 		background-color: #007bff;
 		border-color: #007bff;
