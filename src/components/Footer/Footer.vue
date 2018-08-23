@@ -12,9 +12,6 @@
 	import Gentime from "./Gentime.vue"
 
 	export default {
-		data(){ 
-			return { } 
-		},
 		components: {
 			Copyright,
 			Gentime

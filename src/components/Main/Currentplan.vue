@@ -5,9 +5,9 @@
 			<span class="collapse-btn btn" @click="currentPlan"><icon name="caret" /></span>
 		</div>
 		<transition name="currentPlanShowAnimation">
-			<div v-show="data.currentPlanShow" class="animation-wrapper middle">
+			<div v-show="getCurrentPlanShow" class="animation-wrapper middle">
 				<b-tabs variant="primary">
-					<b-tab :title="`Проект ${index+1}`" class="current-plan-tab" v-for="(plan, index) in data.plans" :key="index">
+					<b-tab :title="`Проект ${index+1}`" class="current-plan-tab" v-for="(plan, index) in getPlans" :key="index">
 						<div class="col-lg-2">
 							<div class="ibox">
 								<div class="progress progress-mini" :class="plan.domains <= 0 ? 'red' : ''">
@@ -80,15 +80,9 @@
 </template>
 
 <script>
+	import { mapGetters } from 'vuex';
 	export default { 
-		computed:{
-			data(){
-				return{
-					currentPlanShow: this.$store.state.currentPlanShow,
-					plans: this.$store.getters.plans
-				}
-			}
-		},
+		computed:mapGetters(["getCurrentPlanShow","getPlans"]),
 		methods:{
 			currentPlan(data){
 				this.$store.commit({type:'currentPlan'})

@@ -28,7 +28,7 @@
 		computed:{
 			data(){
 				return{
-					history: this.$store.state.history
+					history: this.$store.getters.getHistory
 				}
 			}
 		}

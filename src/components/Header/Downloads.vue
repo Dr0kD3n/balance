@@ -10,9 +10,7 @@
 </template>
 
 <script>
-	export default {
-		name: 'Downloads',
-	}
+	export default { }
 </script>
 
 <style scoped lang="scss">

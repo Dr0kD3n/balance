@@ -40,22 +40,22 @@ export const store = new Vuex.Store({
     }
   },
   getters: {
-    showSidebar(state){
+    getShowSidebar(state){
       return state.showSidebar
     },
-    sidebarDropdown(state){
+    getSidebarDropdown(state){
       return state.sidebarDropdown
     },
-    currentPlanShow(state){
+    getCurrentPlanShow(state){
       return state.currentPlanShow
     },
-    radio(state){
+    getRadio(state){
       return state.radio
     },
-    plans(state){
+    getPlans(state){
       return state.plans
     },
-    history(state){
+    getHistory(state){
       return state.history
     }
   }

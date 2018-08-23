@@ -30,7 +30,7 @@
 		computed:{
 			data(){
 				return{
-					showSidebar: this.$store.state.showSidebar
+					showSidebar: this.$store.getters.getShowSidebar
 				}
 			}
 		},

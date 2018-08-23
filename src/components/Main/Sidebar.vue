@@ -1,7 +1,7 @@
 <template>
 	<div class="sidebar-wrapper">
 		<transition name="transition-slideBarOpen">
-			<b-nav vertical class="w-10" v-show="data.showSidebar">
+			<b-nav vertical class="w-10" v-show="getShowSidebar">
 				<div class="sidebar">
 					<div>
 						<b-nav-item>
@@ -13,16 +13,16 @@
 						</b-nav-item>
 						<div class="sidebar-item-colection">
 							<b-nav-item class="sidebar-item" id="Profile">Профиль</b-nav-item>
-							<b-nav-item class="sidebar-item sidebar-dropdown" id="Projects" @click="sidebarDropdown('Projects')" :class="data.sidebarDropdown == 'Projects' ? 'sidebar-item-opened' : ''">Проекты<icon name="caret" />
+							<b-nav-item class="sidebar-item sidebar-dropdown" id="Projects" @click="sidebarDropdown('Projects')" :class="getSidebarDropdown == 'Projects' ? 'sidebar-item-opened' : ''">Проекты<icon name="caret" />
 								<transition name="tansition-sidebar-dropdown-collection-small">
-									<b-nav vertical class="sidebar-dropdown-collection" v-show="data.sidebarDropdown == 'Projects'">
+									<b-nav vertical class="sidebar-dropdown-collection" v-show="getSidebarDropdown == 'Projects'">
 										<b-nav-item>Создать проект</b-nav-item>
 									</b-nav>
 								</transition>
 							</b-nav-item>
-							<b-nav-item class="sidebar-item sidebar-dropdown" id="Mutual-projects" @click="sidebarDropdown('Mutual-projects')" :class="data.sidebarDropdown == 'Mutual-projects' ? 'sidebar-item-opened' : ''">Общие Проекты<icon name="caret" />
+							<b-nav-item class="sidebar-item sidebar-dropdown" id="Mutual-projects" @click="sidebarDropdown('Mutual-projects')" :class="getSidebarDropdown == 'Mutual-projects' ? 'sidebar-item-opened' : ''">Общие Проекты<icon name="caret" />
 								<transition name="tansition-sidebar-dropdown-collection">
-									<b-nav vertical class="sidebar-dropdown-collection" v-show="data.sidebarDropdown == 'Mutual-projects'">
+									<b-nav vertical class="sidebar-dropdown-collection" v-show="getSidebarDropdown == 'Mutual-projects'">
 										<b-nav-item>iPhone и айфон</b-nav-item>
 										<b-nav-item>Отдых За Границей</b-nav-item>
 										<b-nav-item>Проверка Позиций</b-nav-item>
@@ -30,9 +30,9 @@
 								</transition>
 							</b-nav-item>
 							<b-nav-item class="sidebar-item" id="Telegram-chat">Телеграм Чат</b-nav-item>
-							<b-nav-item class="sidebar-item sidebar-dropdown" id="Payments"  @click="sidebarDropdown('Payments')" :class="data.sidebarDropdown == 'Payments' ? 'sidebar-item-opened' : ''">Платежи<icon name="caret" />
+							<b-nav-item class="sidebar-item sidebar-dropdown" id="Payments"  @click="sidebarDropdown('Payments')" :class="getSidebarDropdown == 'Payments' ? 'sidebar-item-opened' : ''">Платежи<icon name="caret" />
 								<transition name="tansition-sidebar-dropdown-collection">
-									<b-nav vertical class="sidebar-dropdown-collection" v-show="data.sidebarDropdown == 'Payments'" key="ul">
+									<b-nav vertical class="sidebar-dropdown-collection" v-show="getSidebarDropdown == 'Payments'" key="ul">
 										<b-nav-item>Тарифные Планы</b-nav-item>
 										<b-nav-item>Текущий план</b-nav-item>
 										<b-nav-item>Инвойсы</b-nav-item>
@@ -50,15 +50,9 @@
 	</div>
 </template>
 <script>
+	import { mapGetters } from "vuex";
 	export default { 
-		computed:{
-			data(){
-				return{
-					showSidebar: this.$store.getters.showSidebar,
-					sidebarDropdown: this.$store.getters.sidebarDropdown
-				}
-			}
-		},
+		computed:mapGetters(["getShowSidebar","getSidebarDropdown"]),
 		methods:{
 			hideSidebar(){
 				this.$store.commit({type:'hideSidebar'})
